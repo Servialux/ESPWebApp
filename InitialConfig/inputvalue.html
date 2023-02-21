@@ -1,56 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inputvalue.css">
+    
     <title>Configuration</title>
-   
+
 </head>
+
 <body>
     <div id="buttons" class="container">
-    <button class="btn" id="button1">1</button>
-    <button class="btn" id="button2">2</button>
-    <button class="btn" id="button3">3</button>
-    <button class="btn" id="button4">4</button>
-</div>
+        <button class="btn" id="button1" onclick="maConfig()">1</button>
+        <button class="btn" id="button2">2</button>
+        <button class="btn" id="button3">3</button>
+        <button class="btn" id="button4">4</button>
+    </div>
 
 
-<div id="config" class="containerform">
-    <form action="/action_page.php">
-      <label for="nbentry">Nombre d'entrée</label>
-      <input type="text" id="nbentry" name="numberentry" value="11,12,13,14" readonly="readonly">
-  
-      <label for="nmentry">Nom d'entrée</label>
-      <input type="text" id="nmentry" name="nameentry" required maxlength="18" placeholder="18 caractères maximum">
-  
-      <label for="tpentry">Type d'entrée</label>
-      <select id="entrée" name="entrée">
-        <option value="normclosed">Normalement fermé</option>
-        <option value="normopened">Normalement ouvert</option>
-      </select>
-    
-      <input type="submit" value="Suivant">
-      <input type="submit" value="Passer cette étape">
-    </form>
-</div>
+    <div id="config" class="formulaire" style="display:none;">
+        <form action="#">
+            <label for="nbentry">Nombre d'entrée</label>
+            <input type="text" id="nbentry" name="numberentry" value="11,12,13,14" readonly="readonly">
+
+            <label for="nmentry">Nom d'entrée</label>
+            <input type="text" id="nmentry" name="nameentry" required maxlength="18"
+                placeholder="18 caractères maximum">
+
+            <label for="tpentry">Type d'entrée</label>
+            <select id="entrée" name="entrée">
+                <option value="normclosed">Normalement fermé</option>
+                <option value="normopened">Normalement ouvert</option>
+            </select>
+
+            <input type="submit" value="Suivant">
+            <input type="submit" value="Passer cette étape">
+        </form>
+    </div>
 
 
 
-<script>
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("buttons");
-    var btns = header.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      if (current.length > 0) { 
-        current[0].className = current[0].className.replace(" active", "");
-      }
-      this.className += " active";
-      });
-    }
+    <script type="text/javascript">
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("buttons");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active", "");
+                }
+                this.className += " active";
+            });
+        }
+    </script>
+    <script>
+        function maConfig() {
+  var div = document.getElementById("config");
+  if (div.style.display === "none") {
+    div.style.display = "block";
+  } else {
+    div.style.display = "none";
+  }
+}
     </script>
 
 
@@ -61,5 +75,7 @@
 
 
 
+
 </body>
+
 </html>

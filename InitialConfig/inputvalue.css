@@ -20,6 +20,7 @@ button:active {
     cursor: pointer;
     font-size: 25px;
     margin: 0.8rem;
+    border-radius: 10px;
   }
 
   .active, .btn:hover {
@@ -27,7 +28,12 @@ button:active {
     color: #0000ff;
   }
 
-  .containerform{
-    display: flex;
-    
-  }
+  .formulaire{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: none;
+}
+
+
+

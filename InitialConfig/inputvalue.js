@@ -1,5 +1,8 @@
-document.getElementById("button1")
-        .addEventListener("click", function() {
-  document.getElementById("container").hidden = true;
-  document.getElementById("containerform").hidden = false;
-}, false);
+function maConfig() {
+  var div = document.getElementById("config");
+  if (div.style.display === "none") {
+    div.style.display = "block";
+  } else {
+    div.style.display = "none";
+  }
+}
