@@ -1,8 +1,7 @@
-function maConfig() {
-  var div = document.getElementById("config");
-  if (div.style.display === "none") {
-    div.style.display = "block";
-  } else {
-    div.style.display = "none";
+var numberValue = value [1, 2, 3, 4];
+
+function numberValue(value) {
+  for (let index = 0; index < array.lenght; index++) {
+     console.log(value);
   }
 }
