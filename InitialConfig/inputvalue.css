@@ -7,24 +7,27 @@ body {
     background-color:#f8f8f8 ;
   }
 
-button{
-    display:inline-block;
-    margin: 3rem;
-    padding: 1rem;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border-style: hidden;
-    font-size: 20px;
-    background-color:#c3cdda;
-}
-
-button:hover {
-    background-color: #7c7d96;
-    transform: scale(3px);
-}
-
 button:active {
-    transform:translateY(4px);
+    transform:translateY(3px);
+    color: #007bff;
 }
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 20px 28px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0.8rem;
+  }
+
+  .active, .btn:hover {
+    background-color: #666;
+    color: #0000ff;
+  }
+
+  .containerform{
+    display: flex;
+    
+  }
