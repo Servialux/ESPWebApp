@@ -1,21 +1,19 @@
-// Récupération des éléments HTML 
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
-const btn3 = document.getElementById("btn3");
-const btn4 = document.getElementById("btn4");
-const myConfig = document.getElementById("form-container");
+const btns = document.querySelectorAll('.btn');
+const body = document.getElementsByTagName("body")[0];
 
-// Ajout des événements click aux boutons
-btn1.addEventListener("click", afficherFormulaire);
-btn2.addEventListener("click", afficherFormulaire);
-btn3.addEventListener("click", afficherFormulaire);
-btn4.addEventListener("click", afficherFormulaire);
+btns.forEach((btn) => {
+  btn.addEventListener('click', (event) => {
+    const ntotal = Number(event.target.value);
+    const form = document.createElement("form");
+    form.setAttribute("method", "post");
+   
 
-// Fonction pour afficher ou masquer le formulaire
-function afficherFormulaire() {
-  if (myConfig.style.display === "none") {
-    myConfig.style.display = "block";
-  } else {
-    myConfig.style.display = "none";
-  }
-}
+    for (let i = 0; i < ntotal; i++) {
+      const myconfig = document.createElement("input");
+    
+      form.appendChild(myconfig);
+    }
+
+    body.appendChild(form);
+  });
+});
