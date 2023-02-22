@@ -13,15 +13,15 @@
 
 <body>
     <div id="buttons" class="container">
-        <button class="btn" id="button1" onclick="numberValue(value = '1')">1</button>
-        <button class="btn" id="button2" onclick="numberValue(value = '2')">2</button>
-        <button class="btn" id="button3" onclick="numberValue(value = '3')">3</button>
-        <button class="btn" id="button4" onclick="numberValue(value = '4')">4</button>
+        <button type="button" class="btn" id="btn1">1</button>
+        <button type="button" class="btn" id="btn2">2</button>
+        <button type="button" class="btn" id="btn3">3</button>
+        <button type="button" class="btn" id="btn4">4</button>
     </div>
 
 
-    <div id="config" class="form-container">
-        <form id ="button1" class = "hidden">
+    <div id="form-container">
+        <form action="" id ="myconfig" class = "form1">
             <label for="nbentry">Nombre d'entrée</label>
             <input type="text" id="nbentry" name="numberentry" value="11,12,13,14" readonly="readonly">
 
@@ -34,9 +34,10 @@
                 <option value="normclosed">Normalement fermé</option>
                 <option value="normopened">Normalement ouvert</option>
             </select>
-
+        <div>
             <input type="submit" value="Suivant">
             <input type="submit" value="Passer cette étape">
+        </div>
         </form>
     </div>
 

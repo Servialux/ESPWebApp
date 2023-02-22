@@ -1,10 +1,11 @@
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color:#f8f8f8 ;
+    background-color:#f5f5f5 ;
   }
 
 button:active {
@@ -28,18 +29,34 @@ button:active {
     color: #0000ff;
   }
 
-  .form-container{
-    width: 100%;
-    display:inline-block;
+  .form-container > *{
+    
+    width: 250px;
+    height: 250px;
+    align-items: center;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #d4d1d1;
     padding: 20px;
-    display: none; 
-  
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+  } 
+
+  input[type=submit]:first-child {
+    background-color: green;
+  }
+ 
+  input[type=submit]:last-child {
+    background-color: #f44336;
+  }
+
+#form-container {
+  display: none;
 }
- .hidden {
-    display: none;
+  .form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    /*display: none;*/
  } 
 
-
-  
