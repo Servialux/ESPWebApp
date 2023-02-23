@@ -1,10 +1,10 @@
 body {
-    display:flex;
+    display:grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    padding: 1rem;
     background-color:#4A4B65 ;
   }
   
@@ -30,7 +30,7 @@ body {
     padding: 16px 30px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: grid;
     font-size: 1.2rem;
     margin: 1rem;
     cursor: pointer;
@@ -49,40 +49,50 @@ body {
     transform: translateY(4px);
    
   } /*cible le bouton quand on clique dessus*/
-
-  @media screen and (max-width: 1380px) {
-    p {
-     margin-left: 1.5rem;
-     margin-right: 1rem;
-    }
-  }
- 
-  @media  screen and (max-width: 970px) {
-    h1 {
-      margin-left: 1.5rem;
-      margin-right: 1rem;
-      text-align: center;
-    }
-  }
-@media screen and (max-width: 750px) {
-  body {
-    margin-right: 2rem;
-  }
-}
-
-
-@media screen and (max-width: 400px) {
-  p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-
-@media screen and (max-width: 300px) {
-  button {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
-}
   
+  .card {
+    /*background-color: dodgerblue;*/
+    color: white;
+    padding: 1rem;
+    height: auto;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    .card {
+      padding: 10px;
+    }
+  }
+  
+  /* Styling for screens between 600px and 900px wide */
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+    body {
+      font-size: 16px;
+    }
+    .card {
+      padding: 20px;
+    }
+  }
+  
+  /* Styling for screens larger than 900px wide */
+  @media screen and (min-width: 900px) {
+    body {
+      font-size: 18px;
+    }
+    .card {
+      padding: 30px;
+    }
+  }
+
+
