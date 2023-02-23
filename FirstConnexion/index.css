@@ -30,7 +30,7 @@ body {
     padding: 16px 30px;
     text-align: center;
     text-decoration: none;
-    display: grid;
+    width: auto;
     font-size: 1.2rem;
     margin: 1rem;
     cursor: pointer;
@@ -56,8 +56,7 @@ body {
   
  
    .card {
-    background-color: dodgerblue;
-    color: white;
+    color: rgb(240, 240, 240);
     padding: 1.2rem;
     height: auto;
   }
