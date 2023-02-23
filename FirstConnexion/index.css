@@ -30,12 +30,17 @@ body {
     padding: 16px 30px;
     text-align: center;
     text-decoration: none;
+<<<<<<< HEAD
     width: auto;
+=======
+>>>>>>> 3b51ea88d90c88cf778810ff84f28f43e4befb2d
     font-size: 1.2rem;
     margin: 1rem;
     cursor: pointer;
     border-radius: 10px;
     transition: all 0.3s ease;
+    width: auto;
+    
   }
   
   button:hover {
