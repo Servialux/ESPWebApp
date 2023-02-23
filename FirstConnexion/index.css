@@ -28,6 +28,8 @@ body {
     border: none;
     color: white;
     padding: 16px 30px;
+    display: flex;
+    justify-content: center;
     text-align: center;
     text-decoration: none;
     display: grid;
@@ -50,49 +52,35 @@ body {
    
   } /*cible le bouton quand on clique dessus*/
   
-  .card {
-    /*background-color: dodgerblue;*/
+  /*h1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }*/
+  
+  html { font-size: 19px; }
+  body { padding: 1.5rem; text-align: center; }
+  
+ 
+   .card {
+    background-color: dodgerblue;
     color: white;
     padding: 1rem;
     height: auto;
   }
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
+  .cards .h1 {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
+    justify-content: center;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
   }
   
-  @media screen and (max-width: 600px) {
-    body {
-      font-size: 14px;
-    }
-    .card {
-      padding: 10px;
-    }
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: (1, 1fr); }
   }
   
-  /* Styling for screens between 600px and 900px wide */
-  @media screen and (min-width: 600px) and (max-width: 900px) {
-    body {
-      font-size: 16px;
-    }
-    .card {
-      padding: 20px;
-    }
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: (5, 1fr); }
   }
   
-  /* Styling for screens larger than 900px wide */
-  @media screen and (min-width: 900px) {
-    body {
-      font-size: 18px;
-    }
-    .card {
-      padding: 30px;
-    }
-  }
-
-
