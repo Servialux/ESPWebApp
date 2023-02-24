@@ -23,13 +23,11 @@ h1 {
 }
 
 p {
-
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
 .btn {
-    
     border: none;
     padding: 16px 30px;
     text-align: center;
@@ -44,12 +42,14 @@ p {
     background-color: #3e8e41;
     font-size: 1.2rem;
     margin: 0.8rem;
-
 }
+.vert { color:#d1cfcf; background-color: #3e8e41;}
+
+.lightgrey { color: #2b2a2a; background-color: rgb(163, 163, 163);}
 
 button:hover {
     color: whitesmoke;
-    background-color: #3e8e41;
+   
     transform: scale(1.1);
     box-shadow: 0 2px #2b2a2a;
     border: none;
@@ -59,7 +59,8 @@ button:hover {
 /*cible le bouton lorsqu'il est survolé*/
 
 button:active {
-    
+    transform: translateY(3px);
+    color: #007bff;
     background-color: #3e8e41;
     transform: translateY(4px);
    
@@ -68,7 +69,7 @@ button:active {
 /*cible le bouton quand on clique dessus*/
 
 .card {
-    color: rgb(240, 240, 240);
+    
     padding: 1.2rem;
     height: auto;
 }

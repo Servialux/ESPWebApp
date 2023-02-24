@@ -1,58 +1,14 @@
 
 
-button:active {
-  transform: translateY(3px);
-  color: #007bff;
-}
-
-.btn {
-  border: none;
-  outline: none;
-  padding: 20px 28px;
-  /*background-color: #f1f1f1;*/
-  cursor: pointer;
-  font-size: 25px;
-  margin: 0.8rem;
-  border-radius: 10px;
-}
-
-.active,
-.btn:hover {
-  background-color: #666;
-  color: #0000ff;
-}
-
-.popupform >*{
-  display: none; 
-  width: 250px;
-  height: 250px;
-  align-items: center;
-  border-radius: 10px;
-  background-color: #d1cfcf;
-  padding: 15px;
-  font-family: Inter, sans-serif;
-  font-size: 22px;
-}
-
-input[type=submit]:first-child:hover {
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-  background-color: green;
-  cursor: pointer;
-  transform:scale(1.1);
-}
-
-input[type=submit]:last-child {
-  border-radius: 5px;
-  background-color: #f44336;
-}
 
 
 
-.form1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 10px;
-  display: none; 
-}
+
+
+
+
+
+
+
+
+
