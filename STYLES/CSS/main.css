@@ -43,13 +43,12 @@ font-size: 1.2rem;
     font-size: 1.2rem;
   
 }
-.maclass { color:#e4e1e1; background-color: #3e8e41; border-radius: 5px;font-size: 20px;border: none;}
+.maclass { color:#e4e1e1; background-color: #3e8e41; border-radius: 5px;font-size: 20px;border: none;padding: 0.5rem;}
 
 .lightgrey { color: #2b2a2a; background-color: rgb(163, 163, 163);}
 
 .maclass:hover {
     color: whitesmoke;
-    
     transform: scale(1.1);
     
 }
@@ -59,6 +58,7 @@ font-size: 1.2rem;
     background-color: #3e8e41;
     transform: translateY(4px);
     box-shadow: 0 2px #2b2a2a;
+    transition:ease-in-out 0.5 ease-in;
 }
 
 /*cible le bouton quand on clique dessus*/
