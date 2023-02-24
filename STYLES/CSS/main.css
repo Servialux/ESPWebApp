@@ -34,35 +34,31 @@ font-size: 1.2rem;
     text-decoration: none;
     width: auto;
     font-size: 25px;
-    margin: 1rem;
+    margin: 0.8rem;
     cursor: pointer;
     border-radius: 5px;
     transition: all 0.5s ease;
     outline: none;
     background-color: #3e8e41;
     font-size: 1.2rem;
-    margin: 0.8rem;
+  
 }
-.maclass { color:#d1cfcf; background-color: #3e8e41;}
+.maclass { color:#e4e1e1; background-color: #3e8e41; border-radius: 5px;font-size: 20px;border: none;}
 
 .lightgrey { color: #2b2a2a; background-color: rgb(163, 163, 163);}
 
 .maclass:hover {
     color: whitesmoke;
-   
+    
     transform: scale(1.1);
-    box-shadow: 0 2px #2b2a2a;
-    border: none;
-    border-radius: 5px;
+    
 }
 
 /*cible le bouton lorsqu'il est survolé*/
 .maclass:active {
-    transform: translateY(3px);
-    color: #007bff;
     background-color: #3e8e41;
     transform: translateY(4px);
-   
+    box-shadow: 0 2px #2b2a2a;
 }
 
 /*cible le bouton quand on clique dessus*/
