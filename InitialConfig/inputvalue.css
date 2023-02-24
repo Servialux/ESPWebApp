@@ -9,7 +9,7 @@ button:active {
   border: none;
   outline: none;
   padding: 20px 28px;
-  background-color: #f1f1f1;
+  /*background-color: #f1f1f1;*/
   cursor: pointer;
   font-size: 25px;
   margin: 0.8rem;
