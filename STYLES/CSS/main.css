@@ -43,11 +43,11 @@ font-size: 1.2rem;
     font-size: 1.2rem;
     margin: 0.8rem;
 }
-.vert { color:#d1cfcf; background-color: #3e8e41;}
+.maclass { color:#d1cfcf; background-color: #3e8e41;}
 
 .lightgrey { color: #2b2a2a; background-color: rgb(163, 163, 163);}
 
-maclass:hover {
+.maclass:hover {
     color: whitesmoke;
    
     transform: scale(1.1);
@@ -57,7 +57,7 @@ maclass:hover {
 }
 
 /*cible le bouton lorsqu'il est survolé*/
-maclass:active {
+.maclass:active {
     transform: translateY(3px);
     color: #007bff;
     background-color: #3e8e41;
