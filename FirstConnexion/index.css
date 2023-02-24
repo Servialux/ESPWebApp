@@ -1,84 +1,87 @@
+html {
+  font-family: Inter, sans-serif;
+  color: white;
+  font-size: 19px;
+}
+
+
 body {
-    display:grid;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    padding: 1.5rem;
-    background-color:#4A4B65 ;
-  }
-  
-  h1 {
-    font-family: Inter, sans-serif ;
-    color: white;
-    font-weight: lighter;
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  p {
-    font-family: Inter, sans-serif ;
-    color: white;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 16px 30px;
-    text-align: center;
-    text-decoration: none;
-<<<<<<< HEAD
-    width: auto;
-=======
->>>>>>> 3b51ea88d90c88cf778810ff84f28f43e4befb2d
-    font-size: 1.2rem;
-    margin: 1rem;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    width: auto;
-    
-  }
-  
-  button:hover {
-    background-color: #3e8e41;
-    transform: scale(1.1);
-    box-shadow: 0 2px #2b2a2a;
-  }/*cible le bouton lorsqu'il est survolé*/
-  
-  button:active {
-    background-color: #3e8e41;
-    transform: translateY(4px);
-   
-  } /*cible le bouton quand on clique dessus*/
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding: 1.5rem;
+  background-color: #4A4B65;
+}
 
-  
-  html { font-size: 19px; }
+h1 {
+  font-weight: lighter;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
 
+p {
   
- 
-   .card {
-    color: rgb(240, 240, 240);
-    padding: 1.2rem;
-    height: auto;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  padding: 16px 30px;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  font-size: 1.2rem;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  width: auto;
+
+}
+
+button:hover {
+  color: whitesmoke;
+  background-color: #3e8e41;
+  transform: scale(1.1);
+  box-shadow: 0 2px #2b2a2a;
+}
+
+/*cible le bouton lorsqu'il est survolé*/
+
+button:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+
+/*cible le bouton quand on clique dessus*/
+
+.card {
+  color: rgb(240, 240, 240);
+  padding: 1.2rem;
+  height: auto;
+}
+
+.cards .h1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: (1, 1fr);
   }
-  .cards .h1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    justify-content: center;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: (5, 1fr);
   }
-  
-  @media (min-width: 600px) {
-    .cards { grid-template-columns: (1, 1fr); }
-  }
-  
-  @media (min-width: 900px) {
-    .cards { grid-template-columns: (5, 1fr); }
-  }
-  
+}
