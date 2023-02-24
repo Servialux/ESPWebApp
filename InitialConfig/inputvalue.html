@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="inputvalue.css">
-    
+    <link rel="stylesheet" href="styles/CSS/main.css">
+
     <title>Configuration</title>
 
 </head>
 
 <body>
     <div id="buttons" class="container">
-        <button type="button" class="btn" id="btn1" value="button1">1</button>
-        <button type="button" class="btn" id="btn2" value="button2">2</button>
-        <button type="button" class="btn" id="btn3" value="button3">3</button>
-        <button type="button" class="btn" id="btn4" value="button4">4</button>
+        <button type="button" class="btn" id="btn" value="4">1</button>
+        <button type="button" class="btn" id="btn" value="4">2</button>
+        <button type="button" class="btn" id="btn" value="4">3</button>
+        <button type="button" class="btn" id="btn" value="4">4</button>
     </div>
 
 
     <div id="form-container" class="popupform">
-        <form action="" id ="myconfig" class = "form1">
+        <form action="" id="myconfig" class="form1">
             <label for="nbentry">Nombre d'entrée</label>
             <input type="text" id="nbentry" name="numberentry" value="11,12,13,14" readonly="readonly">
 
@@ -34,10 +34,10 @@
                 <option value="normclosed">Normalement fermé</option>
                 <option value="normopened">Normalement ouvert</option>
             </select>
-        <div>
-            <input type="submit" value="Suivant">
-            <input type="submit" value="Passer cette étape">
-        </div>
+            <div>
+                <input type="submit" value="Suivant">
+                <input type="submit" value="Passer cette étape">
+            </div>
         </form>
     </div>
 
@@ -59,23 +59,14 @@
     </script>
     <script>
         function maConfig() {
-  var div = document.getElementById("config");
-  if (div.style.display === "none") {
-    div.style.display = "block";
-  } else {
-    div.style.display = "none";
-  }
-}
+            var div = document.getElementById("config");
+            if (div.style.display === "none") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
     </script>
-
-
-
-
-
-
-
-
-
 
 </body>
 

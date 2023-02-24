@@ -1,15 +1,15 @@
-const btns = document.querySelectorAll('.btn');
+const buttons = document.querySelectorAll('.btn');
 const body = document.getElementsByTagName("body")[0];
 
-btns.forEach((btn) => {
+buttons.forEach((btn) => {
   btn.addEventListener('click', (event) => {
     const ntotal = Number(event.target.value);
     const form = document.createElement("form");
     form.setAttribute("method", "post");
    
 
-    for (let i = 0; i < ntotal; i++) {
-      const myconfig = document.createElement("input");
+    for (var i = 0; i < ntotal; i++) {
+      const myconfig = document.createElement("form");
     
       form.appendChild(myconfig);
     }
@@ -17,3 +17,4 @@ btns.forEach((btn) => {
     body.appendChild(form);
   });
 });
+console.log(body);
