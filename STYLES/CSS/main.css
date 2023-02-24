@@ -33,7 +33,6 @@ font-size: 1.2rem;
     text-align: center;
     text-decoration: none;
     width: auto;
-    font-size: 25px;
     margin: 0.8rem;
     cursor: pointer;
     border-radius: 5px;
@@ -44,7 +43,7 @@ font-size: 1.2rem;
 }
 .maclass { color:#e4e1e1; background-color: #3e8e41; border-radius: 5px;font-size: 20px;border: none;padding: 0.5rem;}
 
-.help { background-color: rgb(163, 163, 163); width: 8%; }
+.help { background-color: rgb(163, 163, 163); width: auto; }
 
 .lightgrey { color: #2b2a2a; background-color: rgb(163, 163, 163);}
 
