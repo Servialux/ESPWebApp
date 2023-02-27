@@ -13,7 +13,7 @@ body {
     height: 100vh;
     padding: 1.5rem;
     margin: 0;
-    background-color: #4A4B65;
+    /*background-color: #4A4B65;*/
 }
 
 h1 {
@@ -96,14 +96,14 @@ p {
 .btn:hover {
  
     transform: scale(1.1);
-    background:linear-gradient(0deg, #838386 0%, #1276f6 35%, #038dd0 100%);
+    /*background:-webkit-linear-gradient(0deg, #838386 0%, #1276f6 35%, #038dd0 100%);*/
     color: #0000ff;
 }
 
 
 
 .popupform>* {
-    display: none;
+   /*display: none;*/
     width: 250px;
     height: 250px;
     align-items: center;
