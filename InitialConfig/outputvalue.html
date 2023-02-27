@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/css/main.css">
+
+    <title>Configuration</title>
+
+</head>
+
+<body>
+    <div id="buttons" class="container">
+        <button type="button" class="btn lightgrey" id="btn" value="4">1</button>
+        <button type="button" class="btn lightgrey" id="btn" value="4">2</button>
+        <button type="button" class="btn lightgrey" id="btn" value="4">3</button>
+        <button type="button" class="btn lightgrey" id="btn" value="4">4</button>
+    </div>
+
+
+    <div id="form-container" class="popupform">
+        <form action="" id="myconfig" class="form">
+            <label for="nbentry">Nombre d'entrée</label>
+            <input type="text" id="nbentry" name="numberentry" value="21,22,23,24" readonly="readonly">
+
+            <label for="nmentry">Nom d'entrée</label>
+            <input type="text" id="nmentry" name="nameentry" required maxlength="18"
+                placeholder="18 caractères maximum">
+
+            <label for="tpentry">Type d'entrée</label>
+            <select name="entrée" id="entrée">
+                <option value="on">Marche</option>
+                <option value="off">Arrêt</option>
+            </select>
+            <select name="timer" id="timer">
+                <option value="timer">1s</option>
+                <option value="timer">2s</option>
+                <option value="timer">3s</option>
+                <option value="timer">4s</option>
+                <option value="timer">5s</option>
+                <option value="timer">6s</option>
+                <option value="timer">7s</option>
+                <option value="timer">8s</option>
+                <option value="timer">9s</option>
+                <option value="timer">10s</option>
+            </select>
+            <div>
+                <input type="submit" value="Suivant">
+                <input type="submit" value="Passer cette étape">
+            </div>
+        </form>
+    </div>
+
+
+
+    <script type="text/javascript">
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("buttons");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active", "");
+                }
+                this.className += " active";
+            });
+        }
+    </script>
+    <script>
+        function maConfig() {
+            var div = document.getElementById("config");
+            if (div.style.display === "none") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

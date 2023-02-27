@@ -10,10 +10,9 @@ buttons.forEach((btn) => {
 
     for (var i = 0; i < ntotal; i++) {
       const myconfig = document.createElement("form");
-    
+      
       form.appendChild(myconfig);
     }
-
     body.appendChild(form);
   });
 });
