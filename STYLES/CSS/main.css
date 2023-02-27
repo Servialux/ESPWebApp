@@ -110,7 +110,7 @@ input[type=submit]:last-child {
 
 
 
-.form1 {
+.form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
