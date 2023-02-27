@@ -29,16 +29,16 @@ p {
 
 .btn {
     border: none;
-    padding: 16px 30px;
+    padding: 30px 30px;
     text-align: center;
     text-decoration: wavy;
     width: auto;
-    margin: 0.8rem;
+    margin: 1rem;
     cursor: pointer;
     transition: all 0.5s ease;
     outline: none;
     font-size: 2rem;
-    
+   
 }
 
 .maclass {
@@ -53,8 +53,8 @@ p {
 /*.help { background-color: rgb(163, 163, 163); width: auto; }*/
 
 .lightgrey {
-    border: 0;
-    line-height: 2.5;
+    border-radius: 50%;
+    line-height: 1;
     padding: 0 20px;
     font-size: 4rem;
     text-align: center;
@@ -94,7 +94,9 @@ p {
 
 .active,
 .btn:hover {
-    /*background-color: #666;*/
+ 
+    transform: scale(1.1);
+    background:linear-gradient(0deg, #838386 0%, #1276f6 35%, #038dd0 100%);
     color: #0000ff;
 }
 
